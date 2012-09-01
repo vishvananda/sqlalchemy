@@ -36,15 +36,15 @@ build-indep: build-docs
 build-docs:
 	dh_testdir
 	dh_installdirs -i
-	cd doc/build && sphinx-build -N -q -E -b html . \
-	 $(call pkgdir,2.X)-doc/usr/share/doc/${p_name}-doc/html/
+	# cd doc/build && sphinx-build -N -q -E -b html . \
+	#  $(call pkgdir,2.X)-doc/usr/share/doc/${p_name}-doc/html/
 	rm -rf $(call pkgdir,2.X)-doc/usr/share/doc/${p_name}-doc/html/.doctrees
 	touch $@
 
 install-docs: build-docs
 	dh_testdir
 	dh_installdirs -i
-	
+
 	dh_link -p${p_name}-doc /usr/share/doc/${p_name}-doc/html/_sources \
 	       	/usr/share/doc/${p_name}-doc/rst
 	dh_link -p${p_name}-doc /usr/share/javascript/jquery/jquery.js \

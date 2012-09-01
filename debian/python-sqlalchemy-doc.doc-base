@@ -1,0 +1,11 @@
+Document: sqlalchemy
+Title: SQLAlchemy Documentation
+Author: Mike Bayer
+Abstract: This document describes SQLAlchemy - the Python SQL toolkit and
+ Object Relational Mapper. It's usable as a comprehensive reference, a user
+ guide and a tutorial all-in-one.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-sqlalchemy-doc/html/index.html
+Files: /usr/share/doc/python-sqlalchemy-doc/html/*.html

@@ -1,0 +1,26 @@
+SQLAlchemy Debian notes
+=======================
+
+The package does not depend on various low level database libraries, but it
+does suggest all the supported ones. Please install the ones you intend to use.
+
+For SQLite2:
+	python-sqlite
+
+For SQLite3:
+	python >=2.5 or python-pysqlite2 or python-pysqlite1.1
+
+For PostgreSQL:
+	python-psycopg2
+
+For MySQL:
+	python-mysqldb
+
+For Firebird:
+	python-kinterbasdb
+
+For Microsoft SQL Server:
+    python-pymssql
+
+Documentation and examples can be found in the python-sqlalchemy-doc package
+in /usr/share/doc/python-sqlalchemy-doc.

@@ -1,0 +1,689 @@
+sqlalchemy (0.7.8-1) unstable; urgency=low
+
+  * New upstream release
+  * Add hardening flags (via /usr/share/dpkg/buildflags.mk)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 17 Jun 2012 23:25:01 +0200
+
+sqlalchemy (0.7.7-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 06 May 2012 20:25:44 +0200
+
+sqlalchemy (0.7.6-1) unstable; urgency=low
+
+  * New upstream release
+  * debhelper's compatibility bumped to 7
+  * Standards-Version bumped to 3.9.3 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 15 Mar 2012 21:05:49 +0100
+
+sqlalchemy (0.7.5-1) unstable; urgency=low
+
+  * New upstream release
+    - minumum required python-sphinx version bumped to 1.1.2
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 29 Jan 2012 23:29:50 +0100
+
+sqlalchemy (0.7.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 10 Dec 2011 19:36:41 +0100
+
+sqlalchemy (0.7.3-2) unstable; urgency=low
+
+  * remove build-indep from build target's dependencies (closes: 645697)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 18 Oct 2011 00:02:50 +0200
+
+sqlalchemy (0.7.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Use underscore.js from libjs-underscore package in -doc package
+  * Python 2.5 hack removed from debian/rules (no longer needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 17 Oct 2011 19:43:32 +0200
+
+sqlalchemy (0.7.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Bump minimum required python-mako version to 0.4.1 (closes: 635898)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 01 Aug 2011 23:18:16 +0200
+
+sqlalchemy (0.7.1-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 07 Jun 2011 21:48:13 +0200
+
+sqlalchemy (0.6.8-1) unstable; urgency=low
+
+  * New upstream release
+  * Standards-Version bumped to 3.9.2 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 06 Jun 2011 23:56:35 +0200
+
+sqlalchemy (0.7.0-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 21 May 2011 23:35:38 +0200
+
+sqlalchemy (0.7~b4-1) experimental; urgency=low
+
+  * New upstream release
+  * Standards-Version bumped to 3.9.2 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 10 May 2011 22:11:44 +0200
+
+sqlalchemy (0.6.7-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 14 Apr 2011 23:37:40 +0200
+
+sqlalchemy (0.7~b3-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 30 Mar 2011 22:33:05 +0200
+
+sqlalchemy (0.7~b1-1) experimental; urgency=low
+
+  * New upstream release
+  * PyDist files: API bumped to 0.7 (all packages built with this package
+    will require python{,3}-sqlalchemy 0.7.X)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 13 Feb 2011 20:54:49 +0100
+
+sqlalchemy (0.6.6-1) experimental; urgency=low
+
+  * New upstream release
+  * Do not compress ovjects.inv file (closes: 608776)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 15 Jan 2011 19:34:08 +0100
+
+sqlalchemy (0.6.5-1) experimental; urgency=low
+
+  * New upstream release
+  * python-sphinx minimum required build version bumped to 1.0
+  * Change source package format to 3.0 (quilt)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 20 Nov 2010 19:09:40 +0100
+
+sqlalchemy (0.6.4-3) experimental; urgency=low
+
+  * Rebuild to get python2.7 extension
+  * Update debian/rules to skip extension handling for all 3.X Python versions
+    (closes: 601013)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 22 Oct 2010 15:44:25 +0200
+
+sqlalchemy (0.6.4-2) experimental; urgency=low
+
+  * Rebuild against newer python3-all package (python3.1 now uses
+    /usr/lib/python3/), minimum python3-all version bumped to 3.1.2-8
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 12 Sep 2010 17:49:47 +0200
+
+sqlalchemy (0.6.4-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 07 Sep 2010 23:18:34 +0200
+
+sqlalchemy (0.6.3-2) unstable; urgency=low
+
+  * Use ${python3:Depends} in python3-sqlalchemy package (closes: 591954)
+    - minimum python3-all-dev version bumped to 3.1.2-6~
+  * Standards-Version bumped to 3.9.1 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 21 Aug 2010 19:05:08 +0200
+
+sqlalchemy (0.6.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Add ${python:Breaks} in debian/control
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 18 Jul 2010 10:16:17 +0200
+
+sqlalchemy (0.6.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Convert to dh_python2
+  * Add pydist file in python-sqlalchemy and python3-sqlalchemy
+    (packages that build depend on these packages and use dh_python* will get
+    correct dependencies via ${python:Depends})
+  * Standards-Version bumped to 3.9.0 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 07 Jul 2010 19:54:32 +0200
+
+sqlalchemy (0.6.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Add more hacks in debian/rules to workaround setuptools bugs
+  * get-orig-source target removed from debian/rules (no longer needed)
+  * Upload to unstable
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 01 Jun 2010 21:27:25 +0200
+
+sqlalchemy (0.6.0-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 19 Apr 2010 22:10:04 +0200
+
+sqlalchemy (0.6~beta3-2) experimental; urgency=low
+
+  * Add Python 3 support (closes: #575194)
+    - new python3-sqlalchemy binary package, no python3-sqlalchemy-ext
+      package for now as C extension is not compatible with Python 3 yet
+    - python3-all-dev and python3-setuptools added to build dependencies
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 13 Apr 2010 23:00:42 +0200
+
+sqlalchemy (0.6~beta3-1) experimental; urgency=low
+
+  * New upstream release
+  * Move Python extensions to new python-sqlalchemy-ext binary package
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 28 Mar 2010 19:55:23 +0200
+
+sqlalchemy (0.6~beta2-1) experimental; urgency=low
+
+  * New upstream release
+    - now provides Python extension
+  * Architecture changed to any, python-all-dev added to Build-Depends
+  * No longer Conflicts/Replaces python2.4-sqlalchemy package
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 20 Mar 2010 21:42:42 +0100
+
+sqlalchemy (0.6~beta1-1) experimental; urgency=low
+
+  * New upstream release
+  * Standards-Version bumped to 3.8.4 (no changes needed)
+  * debian/copyright file updated
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 04 Feb 2010 21:59:24 +0100
+
+sqlalchemy (0.5.8-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 16 Jan 2010 23:54:58 +0100
+
+sqlalchemy (0.5.7-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 29 Dec 2009 16:16:10 +0100
+
+sqlalchemy (0.5.6-1) unstable; urgency=low
+
+  * New upstream release
+  * pass --install-layout=deb via $(py_setup_install_args)
+    (taken from /usr/share/python/python.mk, if available)
+    + python-all minimum required version changed back to 2.3.5-11
+  * update debian/watch to use PyPi instead of sourceforge.net
+  * Standards-Version bumped to 3.8.3 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 16 Sep 2009 14:32:53 +0200
+
+sqlalchemy (0.5.5-1) unstable; urgency=low
+
+  * New upstream release
+  * Add python-pymssql to Suggests (and add a note about Microsoft SQL Server
+    in README.Debian)
+  * Standards-Version bumped to 3.8.2 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 14 Jul 2009 19:50:44 +0200
+
+sqlalchemy (0.5.4p2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 27 May 2009 19:31:25 +0200
+
+sqlalchemy (0.5.4p1-1) unstable; urgency=low
+
+  * New upstream release
+  * build-docs rule enabled again
+    + python-sphinx minimum required version bumped to 0.6
+    + python-mako added to Build-Depends-Indep
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 18 May 2009 19:32:31 +0200
+
+sqlalchemy (0.5.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Add --install-layout=deb to setup.py call (prepare for dist-packages in
+    python2.6)
+    + python-all minimum required version bumped to 2.5.4-1~
+  * Standards-Version bumped to 3.8.1 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 25 Mar 2009 19:25:33 +0100
+
+sqlalchemy (0.5.2-2) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 22 Feb 2009 21:31:07 +0100
+
+sqlalchemy (0.5.2-1) experimental; urgency=low
+
+  * New upstream release
+    + upload to experimental as rev. dependencies are not ready for 0.5
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 24 Jan 2009 22:59:56 +0100
+
+sqlalchemy (0.5.1-1) experimental; urgency=low
+
+  * New upstream release
+    + upload to experimental as rev. dependencies are not ready for 0.5
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 18 Jan 2009 00:50:05 +0100
+
+sqlalchemy (0.5.0-1) experimental; urgency=low
+
+  * New upstream release
+    + disable_ez_setup patch removed (no longer needed)
+    + generate documentation using Sphinx
+      (disable build-docs rule untill Sphinx 0.6 will be released)
+    + upload to experimental as rev. dependencies are not ready for 0.5
+  * HTML documentation moved to /usr/share/doc/python-sqlalchemy/html,
+    RST sources are available in /usr/share/doc/python-sqlalchemy/rst
+  * Add get-orig-source rule
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 30 Dec 2008 17:12:10 +0100
+
+sqlalchemy (0.5.0~rc4-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 14 Nov 2008 23:07:55 +0100
+
+sqlalchemy (0.5.0~rc3-1) experimental; urgency=low
+
+  [ Sandro Tosi ]
+  * Switch Vcs-Browser field to viewsvn
+
+  [ Piotr Ożarowski ]
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 07 Nov 2008 22:52:15 +0100
+
+sqlalchemy (0.5.0~rc2-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 12 Oct 2008 20:44:49 +0200
+
+sqlalchemy (0.4.8-1) unstable; urgency=low
+
+  * New upstream release
+    + fix_typos patch removed
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 12 Oct 2008 20:01:43 +0200
+
+sqlalchemy (0.5.0~rc1-1) experimental; urgency=low
+
+  * New upstream release
+  * debian/watch file updated to handle RC versions correctly
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 11 Sep 2008 23:49:05 +0200
+
+sqlalchemy (0.4.7p1-2) unstable; urgency=low
+
+  * Fixed typos in orm/mapper.py and schema.py (closes: #494948, thanks
+    Sebastian)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 04 Sep 2008 21:20:49 +0200
+
+sqlalchemy (0.5.0~beta3-1) experimental; urgency=low
+
+  * New upstream release
+  * disable_ez_setup patch updated
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 05 Aug 2008 00:58:22 +0200
+
+sqlalchemy (0.4.7p1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 01 Aug 2008 19:43:14 +0200
+
+sqlalchemy (0.4.7-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 26 Jul 2008 18:59:46 +0200
+
+sqlalchemy (0.5.0~beta2-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 14 Jul 2008 22:39:27 +0200
+
+sqlalchemy (0.5.0~beta1-1) experimental; urgency=low
+
+  * New upstream release
+  * Standards-Version bumped to 3.8.0:
+    + debian/README.source file added
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 15 Jun 2008 20:06:03 +0200
+
+sqlalchemy (0.4.6-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 15 May 2008 19:01:21 +0200
+
+sqlalchemy (0.4.5-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 05 Apr 2008 00:46:33 +0200
+
+sqlalchemy (0.4.4-1) unstable; urgency=low
+
+  * New upstream release
+  * doc-base: section changed to Programming/Python
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 12 Mar 2008 18:46:41 +0100
+
+sqlalchemy (0.4.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Strip the "-1" from quilt's and setuptools' required build versions
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 16 Feb 2008 01:57:35 +0100
+
+sqlalchemy (0.4.2p3-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 10 Jan 2008 11:25:35 +0100
+
+sqlalchemy (0.4.2b-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue,  8 Jan 2008 21:25:41 +0100
+
+sqlalchemy (0.4.2a-2) unstable; urgency=low
+
+  * Bump XS-Python-Version to >= 2.4 (closes: #459448)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 06 Jan 2008 18:16:06 +0100
+
+sqlalchemy (0.4.2a-1) unstable; urgency=medium
+
+  * New upstream release
+  * Compress binary package with bzip2
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 05 Jan 2008 23:00:10 +0100
+
+sqlalchemy (0.4.2-1) unstable; urgency=low
+
+  * New upstream release
+  * Switch to python-support
+  * Maintainer related changes:
+    - remove Tommi from Maintainer field, thanks Tommi for your work!
+      (closes: #455011),
+    - move my name to Maintainer field,
+    - add Debian Python Modules Team to Uploaders
+  * Add Vcs-Source and Vcs-Browser fields
+  * Standards-version bumped to 3.7.3 (no changes needed)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 02 Jan 2008 18:38:47 +0100
+
+sqlalchemy (0.4.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 19 Nov 2007 00:54:16 +0100
+
+sqlalchemy (0.4.0-1) unstable; urgency=low
+
+  * New upstream release
+  * hardcode_version patch removed (it's hardcoded by upstream now)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 17 Oct 2007 23:58:26 +0200
+
+sqlalchemy (0.3.11-1) unstable; urgency=low
+
+  * New upstream release
+  * Convert from CDBS to pure debhelper & quilt
+  * Applied all Debian packaging related changes from 0.4.0~ (currently in
+    experimental) except the ones from NEWS and copyright files
+    (closes: #438340)
+  * Replace setuptools_version patch with disable_ez_setup
+  * sqlalchemy.__version__ works without setuptools (LP: #136719):
+    - hardcode_version patch added,
+    - python-setuptools removed from Suggests
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 14 Oct 2007 22:04:08 +0200
+
+sqlalchemy (0.4.0~beta6-1) experimental; urgency=low
+
+  * New upstream release
+  * Homepage field added
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 27 Sep 2007 12:58:33 +0200
+
+sqlalchemy (0.4.0~beta5-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 02 Sep 2007 15:02:48 +0200
+
+sqlalchemy (0.4.0~beta4-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Wed, 22 Aug 2007 22:43:51 +0200
+
+sqlalchemy (0.4.0~beta3-1) experimental; urgency=low
+
+  * New upstream release
+  * Removing python-psycopg from Conflicts (0.4 doesn't try to import psycopg
+    anymore)
+
+ -- Piotr Ożarowski <piotr@debian.org>  Thu, 16 Aug 2007 16:57:58 +0000
+
+sqlalchemy (0.4.0~beta2-1) experimental; urgency=low
+
+  * New upstream release
+  * debian/watch file updated ("~" character issue fixed)
+  * Don't provide python2.X-sqlalchemy packages anymore (it's arch. indep.
+    package)
+  * Add "python (>=2.5) |" before all SQLite packages in Suggests (python2.5
+    provides sqlite3 module which is used by SQLAlchemy if available)
+  * Extend README.Debian file (add notes about database <-> required package
+    relation)
+  * Add info about access.py and interfaces.py files to debian/copyright
+
+ -- Piotr Ożarowski <piotr@debian.org>  Tue, 14 Aug 2007 20:19:11 +0200
+
+sqlalchemy (0.4.0~beta1-1) experimental; urgency=low
+
+  * New upstream release (closes: #421101)
+  * debian/rules updated to handle "~" character
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 12 Aug 2007 21:35:32 +0200
+
+sqlalchemy (0.3.10-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Fri, 20 Jul 2007 23:55:56 +0200
+
+sqlalchemy (0.3.9-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 15 Jul 2007 19:59:38 +0200
+
+sqlalchemy (0.3.8-1) unstable; urgency=low
+
+  * New upstream release
+  * python-central and python-setuptools moved to Build-Depends-Indep
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 03 Jun 2007 16:15:05 +0200
+
+sqlalchemy (0.3.7-1) unstable; urgency=low
+
+  * New upstream release
+  * Suggests python-setuptools (dialects within sqlalchemy.databases become a
+    setuptools entry points)
+  * Description updated
+
+ -- Piotr Ożarowski <piotr@debian.org>  Mon, 30 Apr 2007 21:06:19 +0200
+
+sqlalchemy (0.3.6-2) unstable; urgency=low
+
+  * Upload to unstable
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sun, 08 Apr 2007 16:40:59 +0200
+
+sqlalchemy (0.3.6-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Etch freeze)
+  * Changed my address to piotr@debian.org
+
+ -- Piotr Ożarowski <piotr@debian.org>  Sat, 24 Mar 2007 15:16:26 +0100
+
+sqlalchemy (0.3.5-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Etch freeze)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Thu, 22 Feb 2007 19:03:14 +0100
+
+sqlalchemy (0.3.4-2) experimental; urgency=low
+
+  * Replace python-all with pytohn-all-dev build dependency (python2.5 needs
+    header files to build this package)
+  * Move python-setuptools to Build-Depends: (for clean rule)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Tue, 30 Jan 2007 16:27:47 +0100
+
+sqlalchemy (0.3.4-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Etch freeze)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Tue, 23 Jan 2007 21:44:37 +0100
+
+sqlalchemy (0.3.1-2) unstable; urgency=medium
+
+  * debian/copyright file updated (closes: #403767)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Wed, 20 Dec 2006 00:02:53 +0100
+
+sqlalchemy (0.3.3-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Etch freeze)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Fri, 15 Dec 2006 15:36:00 +0100
+
+sqlalchemy (0.3.2-1) experimental; urgency=low
+
+  * New upstream release (upload to experimental due to Etch freeze)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Mon, 11 Dec 2006 18:09:00 +0100
+
+sqlalchemy (0.3.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Mon, 13 Nov 2006 15:03:35 +0100
+
+sqlalchemy (0.3.0-2) unstable; urgency=low
+
+  * Documentation and example files moved to python-sqlalchemy-doc package
+  * python-psycopg moved to Conflicts: (closes: #380622, #397427).
+    Please use python-psycopg2 instead, psycopg is not supported but it is
+    used if both psycopg and psycopg2 are installed
+  * python2.3-sqlalchemy removed from Conflicts: and Replaces:
+    (Python v2.3 is not supported in Debian anymore and pycentral will not
+    create links for this version)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Wed,  8 Nov 2006 01:19:28 +0100
+
+sqlalchemy (0.3.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Register documentation in doc-base
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Sun, 22 Oct 2006 22:07:15 +0200
+
+sqlalchemy (0.2.8-1) unstable; urgency=low
+
+  * New upstream release
+  * Added myself to Uploaders 
+  * Acknowledge NMUs I made (closes: #369371)
+  * Bumped python-central required version to 0.5 in order to satisfy lintian
+  * Added patch 01_setuptools_version to force use of currently installed
+    setuptools version during building package
+  * Replaced python-all-dev with python-all build requirement since header
+    files are not needed to build arch indep. modules
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Thu,  7 Sep 2006 20:58:45 +0200
+
+sqlalchemy (0.2.7-0.1) unstable; urgency=low
+
+  * Non-maintainer upload (with maintainer's knowledge)
+  * Primary mappers issue patch removed (fixed in upstream)
+  * Added python-psycopg2 to Suggests header (python-psycopg's successor)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Sun, 13 Aug 2006 00:57:00 +0200
+
+sqlalchemy (0.2.6-0.1) unstable; urgency=low
+
+  * Non-maintainer upload (with maintainer's knowledge)
+  * New upstream release
+  * Added a temporary patch for primary mappers issue (will be fixed in next
+    upstream release)
+  * Updated python-kinterbasdb's dependency (new python policy version is
+    available)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Thu, 20 Jul 2006 15:23:59 +0200
+
+sqlalchemy (0.2.5-0.1) unstable; urgency=low
+
+  * Non-maintainer upload (with maintainer's knowledge)
+  * New upstream release
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Tue, 11 Jul 2006 18:59:49 +0200
+
+sqlalchemy (0.2.4-0.1) unstable; urgency=low
+
+  * Non-maintainer upload (with maintainer's knowledge)
+  * New upstream release
+  * Patch for python 2.3 compatibility removed (fixed in upstream)
+  * Added python to Build-Depends (for clean rule)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Fri,  7 Jul 2006 18:07:35 +0200
+
+sqlalchemy (0.2.3-0.1) unstable; urgency=low
+
+  * Non-maintainer upload (closes: #369371)
+  * New upstream release
+  * Update for new python policy:
+    - Convert to python-central
+    - Add debian/pycompat file
+    - Dependencies updated
+  * Add debian/watch file
+  * Fixed long description (indents, missing space in Homepage pseudo-header)
+  * Add temporary patch for python 2.3 compatibility
+  * Standards-version bumped to 3.7.2 (no changes needed)
+
+ -- Piotr Ozarowski <ozarow@gmail.com>  Wed, 21 Jun 2006 21:50:36 +0200
+
+sqlalchemy (0.1.4-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Tommi Virtanen <tv@debian.org>  Sun, 26 Mar 2006 16:52:49 +0300

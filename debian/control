@@ -1,0 +1,121 @@
+Source: sqlalchemy
+Section: python
+Priority: optional
+Maintainer: Piotr Ożarowski <piotr@debian.org>
+Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 7),
+ python-all-dev (>= 2.6.5-2~), python3-all-dev (>= 3.1.2-8~),
+ python-setuptools (>= 0.6b3-1~), python3-setuptools
+Build-Depends-Indep: python-sphinx (>= 1.1.2), python-mako (>= 0.4.1)
+Standards-Version: 3.9.3
+Homepage: http://www.sqlalchemy.org/
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/sqlalchemy/trunk
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/sqlalchemy/trunk/
+XS-Python-Version: >= 2.4
+
+Package: python-sqlalchemy
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Recommends: python-sqlalchemy-ext
+Suggests: python-sqlalchemy-doc, python-psycopg2, python-mysqldb (>= 1.2.1-p2-2),
+ python (>= 2.5) | python-pysqlite2 (>= 2.3.0-1) | python-pysqlite1.1 (>= 1.1.7-2) | python-sqlite (>= 1.0.1-5),
+ python-kinterbasdb (>= 3.1.2-0.3), python-pymssql
+Description: SQL toolkit and Object Relational Mapper for Python
+ SQLAlchemy is an SQL database abstraction library for Python.
+ Its strengths are:
+  * full power and flexibility of SQL. SQLAlchemy provides a full suite
+    of well known enterprise-level persistence patterns, designed for
+    efficient and high-performing database access, adapted into a simple
+    and Pythonic domain language.
+  * extremely easy to use for all the basic tasks, such as: accessing pooled
+    connections, constructing SQL from Python expressions, finding object
+    instances, and committing object modifications back to the database.
+  * powerful enough for complicated tasks, such as: eager load a graph of
+    objects and their dependencies via joins; map recursive adjacency
+    structures automatically; map objects to not just tables but to any
+    arbitrary join or select statement; combine multiple tables together to
+    load whole sets of otherwise unrelated objects from a single result set;
+    commit entire graphs of object changes in one step.
+  * built to conform to what DBAs demand, including the ability to swap out
+    generated SQL with hand-optimized statements, full usage of bind parameters
+    for all literal values, fully transactionalized and consistent updates
+    using Unit of Work.
+  * modular. Different parts of SQLAlchemy can be used independently of the
+    rest, including the connection pool, SQL construction, and ORM. SQLAlchemy
+    is constructed in an open style that allows plenty of customization, with
+    an architecture that supports custom datatypes, custom SQL extensions, and
+    ORM plugins which can augment or extend mapping functionality.
+
+Package: python-sqlalchemy-ext
+Architecture: any
+Depends: python-sqlalchemy (= ${source:Version}), ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Provides: ${python:Provides}
+Description: SQL toolkit and Object Relational Mapper for Python - C extension
+ SQLAlchemy is an SQL database abstraction library for Python.
+ .
+ This package contains C coded extension accelerator for SQLAlchemy.
+
+#Package: python-sqlalchemy-dbg
+#Architecture: any
+#Section: debug
+#Priority: extra
+#Depends: python-sqlalchemy-ext (= ${binary:Version}), python-dbg, ${shlibs:Depends}, ${misc:Depends}
+#Provides: ${python:Provides}
+#XB-Python-Version: ${python:Versions}
+#Description: SQL toolkit and Object Relational Mapper for Python - debug
+# SQLAlchemy is an SQL database abstraction library for Python.
+# .
+# This package contains the extension built for the Python debug interpreter.
+
+Package: python-sqlalchemy-doc
+Section: doc
+Architecture: all
+Priority: extra
+Depends: ${misc:Depends}, libjs-jquery, libjs-underscore
+Recommends: python-sqlalchemy
+Conflicts: python-sqlalchemy (<= 0.3.0-1)
+Description: documentation for the SQLAlchemy Python library
+ SQLAlchemy is an SQL database abstraction library for Python.
+ .
+ This package contains the documentation for SQLAlchemy in HTML format.
+ It's usable as a comprehensive reference, a user guide and a tutorial
+ all-in-one.
+
+Package: python3-sqlalchemy
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends}
+Suggests: python-sqlalchemy-doc
+Description: SQL toolkit and Object Relational Mapper for Python 3
+ SQLAlchemy is an SQL database abstraction library for Python.
+ Its strengths are:
+  * full power and flexibility of SQL. SQLAlchemy provides a full suite
+    of well known enterprise-level persistence patterns, designed for
+    efficient and high-performing database access, adapted into a simple
+    and Pythonic domain language.
+  * extremely easy to use for all the basic tasks, such as: accessing pooled
+    connections, constructing SQL from Python expressions, finding object
+    instances, and committing object modifications back to the database.
+  * powerful enough for complicated tasks, such as: eager load a graph of
+    objects and their dependencies via joins; map recursive adjacency
+    structures automatically; map objects to not just tables but to any
+    arbitrary join or select statement; combine multiple tables together to
+    load whole sets of otherwise unrelated objects from a single result set;
+    commit entire graphs of object changes in one step.
+  * built to conform to what DBAs demand, including the ability to swap out
+    generated SQL with hand-optimized statements, full usage of bind parameters
+    for all literal values, fully transactionalized and consistent updates
+    using Unit of Work.
+  * modular. Different parts of SQLAlchemy can be used independently of the
+    rest, including the connection pool, SQL construction, and ORM. SQLAlchemy
+    is constructed in an open style that allows plenty of customization, with
+    an architecture that supports custom datatypes, custom SQL extensions, and
+    ORM plugins which can augment or extend mapping functionality.
+
+#Package: python3-sqlalchemy-ext
+#Architecture: any
+#Depends: python-sqlalchemy (= ${source:Version}), ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+#Provides: ${python:Provides}
+#Description: SQL toolkit and Object Relational Mapper for Python3 - C extension
+# SQLAlchemy is an SQL database abstraction library for Python.
+# .
+# This package contains C coded extension accelerator for SQLAlchemy.
